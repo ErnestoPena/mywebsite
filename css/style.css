@@ -1,0 +1,77 @@
+/* 
+
+CSS File
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;   
+}
+
+.header {
+    height: 75vh;
+    background-image: linear-gradient(to right bottom, #020202f1,#000000f8), url(../img/bkg_img.jpg); /*Background image with color gradient */
+    background-size: cover; /*This will cover the entire area*/
+    background-position: top;  /*In case of resize the specified side will be fixed*/
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px,
+}
+
+.main-header-div {
+    position: absolute;
+    top: 5%;
+    left:50%;
+    transform: translate(-50% , 0%);
+    
+}
+
+.main-header {
+    font-weight: 400;
+    size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.header-content-container {
+
+    position: absolute;
+    display: block;
+    top:20%;
+    left:5%;
+
+}
+
+.content-left {
+    display: flex;
+    background-image: url(../img/logo.jpg);
+    border-style: dashed;
+    border-
+    clip-path: polygon(40% 1%, 63% 46%, 40% 100%, 0% 100%, 25% 50%, 0% 0%);
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.content_right {
+    display: flex;
+ }
