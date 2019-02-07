@@ -19,8 +19,8 @@ body {
 }
 
 .header {
-    height: 75vh;
-    background-image: linear-gradient(to right bottom, #020202f1,#000000f8), url(../img/bkg_img.jpg); /*Background image with color gradient */
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #000000a1,#000000d8), url(../img/bkg_img.jpg); /*Background image with color gradient */
     background-size: cover; /*This will cover the entire area*/
     background-position: top;  /*In case of resize the specified side will be fixed*/
     position: relative;
@@ -41,7 +41,6 @@ body {
     top: 5%;
     left:50%;
     transform: translate(-50% , 0%);
-    
 }
 
 .main-header {
@@ -50,28 +49,54 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .header-content-container {
-
     position: absolute;
-    display: block;
-    top:20%;
-    left:5%;
-
+    top:30%;
+    left:400px;
+    width:1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.content-left {
-    display: flex;
-    background-image: url(../img/logo.jpg);
-    border-style: dashed;
-    border-
-    clip-path: polygon(40% 1%, 63% 46%, 40% 100%, 0% 100%, 25% 50%, 0% 0%);
-    margin: 5px;
-    height: 200px;
+ol {
+    margin: 3px;
+    padding: 10px;
+    list-style-type: none;
+    width: auto;
+}
+
+ li {
+    display: inline-block;
+    margin: 5px 15px 5px 15px;
     width: 200px;
-}
-
-.content_right {
-    display: flex;
+    text-align:center;
+    border: 1px solid #fff;
+    border-radius: 5px;
  }
+
+ ol:hover {
+    border-color: rgb(22, 156, 112);
+ }
+
+ li a {
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 900px;
+     letter-spacing: 8px;
+     color: #fff;
+     font-size: 22px;
+     text-decoration: none;
+     text-transform: uppercase;
+     display: block; 
+ }
+
+ a:hover {
+     background-color: whitesmoke;
+     color: black;
+ }
+
+ /* Style for Blog Post */
+
