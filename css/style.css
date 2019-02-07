@@ -100,3 +100,50 @@ ol {
 
  /* Style for Blog Post */
 
+.div_blog_header {
+    float: none;
+    position: absolute;
+    width: auto;
+    height: 90;
+    border: solid 2px white;
+    margin-left: 15px;
+    top: 2%;
+    width: 70%;
+    background-color: #14200f 
+}
+
+.h1_post_title {
+    font-family: Lato;
+    font-size: 40px;
+    color: white;
+    margin: 4px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.post_body {
+    font-family: Lato;
+    font-size: 16px;
+    color:white;
+}
+
+.div_post_body {
+    position: absolute;
+    float: left;
+    top: 12%;
+    margin-left: 15px;
+    background-color:white;
+    width: 70%;
+    opacity: 1;
+}
+
+.h2_post_title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 25px 25px;
+    text-align: justify;
+    color: black;
+    font-weight: 800;
+
+
+}
