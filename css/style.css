@@ -5,6 +5,7 @@ CSS File
 */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,45 +20,54 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212424;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, #000000a1,#000000d8), url(../img/bkg_img.jpg); /*Background image with color gradient */
-    background-size: cover; /*This will cover the entire area*/
-    background-position: top;  /*In case of resize the specified side will be fixed*/
-    position: relative;
 }
 
 .logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
+    margin-top: 150px;
+    text-align: center;
 }
 
-.logo {
-    height: 35px,
+.highlight_logo {
+    font-family: 'Raleway' , sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    border: 0.3px solid white;
+    padding: 4px 10px;
 }
 
 .main-header-div {
-    position: absolute;
-    top: 5%;
-    left:50%;
-    transform: translate(-50% , 0%);
-}
-
-.main-header {
+    font-family: 'Raleway' , sans-serif;
     font-weight: 400;
-    size: 100px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin: 5px;
-    padding: 5px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.header-content-container {
-    position: absolute;
-    top:30%;
-    left:400px;
-    width:1200px;
+.header-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 15px 0px;
+    padding: 5px;
+    z-index: 1;
+}
+
+.highlight {
+    color:tomato;
+}
+
+.menu-container {
+    width:0 auto;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -66,7 +76,7 @@ ol {
     margin: 3px;
     padding: 10px;
     list-style-type: none;
-    width: auto;
+    width: 0px auto;
 }
 
  li {
@@ -75,50 +85,50 @@ ol {
     width: 200px;
     text-align:center;
     border: 1px solid #fff;
-    border-radius: 5px;
  }
 
- ol:hover {
-    border-color: rgb(22, 156, 112);
+ li:hover {
+     border: 1px solid tomato;
  }
 
- li a {
-     font-family: 'Courier New', Courier, monospace;
-     font-weight: 900px;
-     letter-spacing: 8px;
+  li a {
+     font-family: 'Raleway', Courier, monospace;
+     font-weight: 200;
+     text-align: center;
+     letter-spacing: 6px;
      color: #fff;
-     font-size: 22px;
+     font-size: 18px;
      text-decoration: none;
      text-transform: uppercase;
      display: block; 
  }
 
  a:hover {
-     background-color: whitesmoke;
-     color: black;
+     font-weight: 200;
+     color: tomato;
  }
 
  /* Style for Blog Post */
 
 .div_blog_header {
-    float: none;
-    position: absolute;
+    float: left;
+    position: relative;
     width: auto;
     height: 90;
     border: solid 2px white;
     margin-left: 15px;
+    margin-bottom: 40px;
     top: 2%;
     width: 70%;
     background-color: #14200f 
 }
 
 .h1_post_title {
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 40px;
     color: white;
-    margin: 4px 15px;
+    margin: 4px 25px;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .post_body {
@@ -128,22 +138,32 @@ ol {
 }
 
 .div_post_body {
-    position: absolute;
-    float: left;
-    top: 12%;
-    margin-left: 15px;
-    background-color:white;
-    width: 70%;
-    opacity: 1;
+    float: right;
+    position: relative;
+    width: auto;
+    height: auto;
+    border: solid 2px white;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    top: 2%;
+    width: 27%;
+    background-color: #14200f 
 }
 
 .h2_post_title {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    padding: 25px 25px;
+    font-family: 'Lato';
+    font-size: 22px;
+    margin: 25px 25px;
     text-align: justify;
-    color: black;
+    color: white;
     font-weight: 800;
+    text-transform: uppercase;
+}
 
-
+.post_body_paragraph {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: white;
+    margin: 25px 25px;
+    text-align: justify;
 }
